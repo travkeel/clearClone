@@ -16,12 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4aU-8F-Xrc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4aU-8F-Xrc">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4aU-8F-Xrc" secondAttribute="trailing" id="9zO-2w-qkb"/>
+                            <constraint firstItem="4aU-8F-Xrc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Cq6-go-4Kh"/>
+                            <constraint firstItem="4aU-8F-Xrc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RSZ-Pk-L1v"/>
+                            <constraint firstItem="4aU-8F-Xrc" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="X3t-5P-gym"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="4aU-8F-Xrc" id="xft-ap-3f2"/>

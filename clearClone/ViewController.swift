@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TableViewCellDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -60,11 +60,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
                 as! TableViewCell
-            cell.textLabel?.backgroundColor = UIColor.clearColor()
+            //cell.textLabel?.backgroundColor = UIColor.clearColor()
             cell.selectionStyle = .None
             let item = toDoItems[indexPath.row]
-            cell.textLabel?.text = item.text
+            //cell.textLabel?.text = item.text
+            
+            cell.delegate = self
+            cell.toDoItem = item
+            
             return cell
+    }
+    
+    func toDoItemDeleted(toDoItem: ToDoItem) {
+        let index = (toDoItems as NSArray).indexOfObject(toDoItem)
+        if index == NSNotFound { return }
+        
+        // could removeAtIndex in the loop but keep it here for when indexOfObject works
+        toDoItems.removeAtIndex(index)
+        
+        // use the UITableView to animate the removal of this row
+        tableView.beginUpdates()
+        let indexPathForRow = NSIndexPath(forRow: index, inSection: 0)
+        tableView.deleteRowsAtIndexPaths([indexPathForRow], withRowAnimation: .Fade)
+        tableView.endUpdates()    
     }
     
     // MARK: - Table view delegate
