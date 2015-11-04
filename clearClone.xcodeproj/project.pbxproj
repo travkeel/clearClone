@@ -14,6 +14,8 @@
 		33E6D42A1BE9918400D8E47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E6D4281BE9918400D8E47E /* LaunchScreen.storyboard */; };
 		33E6D4351BE9918400D8E47E /* clearCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6D4341BE9918400D8E47E /* clearCloneTests.swift */; };
 		33E6D4401BE9918400D8E47E /* clearCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6D43F1BE9918400D8E47E /* clearCloneUITests.swift */; };
+		33E6D44E1BE9926300D8E47E /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6D44D1BE9926300D8E47E /* ToDoItem.swift */; settings = {ASSET_TAGS = (); }; };
+		33E6D4521BE9964E00D8E47E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E6D4511BE9964E00D8E47E /* TableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		33E6D43B1BE9918400D8E47E /* clearCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = clearCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E6D43F1BE9918400D8E47E /* clearCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clearCloneUITests.swift; sourceTree = "<group>"; };
 		33E6D4411BE9918400D8E47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33E6D44D1BE9926300D8E47E /* ToDoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		33E6D4511BE9964E00D8E47E /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				33E6D41F1BE9918400D8E47E /* AppDelegate.swift */,
 				33E6D4211BE9918400D8E47E /* ViewController.swift */,
+				33E6D44D1BE9926300D8E47E /* ToDoItem.swift */,
+				33E6D4511BE9964E00D8E47E /* TableViewCell.swift */,
 				33E6D4231BE9918400D8E47E /* Main.storyboard */,
 				33E6D4261BE9918400D8E47E /* Assets.xcassets */,
 				33E6D4281BE9918400D8E47E /* LaunchScreen.storyboard */,
@@ -256,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				33E6D4221BE9918400D8E47E /* ViewController.swift in Sources */,
+				33E6D4521BE9964E00D8E47E /* TableViewCell.swift in Sources */,
 				33E6D4201BE9918400D8E47E /* AppDelegate.swift in Sources */,
+				33E6D44E1BE9926300D8E47E /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
